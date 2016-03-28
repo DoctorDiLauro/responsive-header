@@ -25,8 +25,12 @@ body {
   margin: 0;
 }
 
-h1 {
+header {
   background-color: #18294f;
+  overflow: hidden;
+}
+
+h1 {
   color: #fff;
 
   padding: .5em;
@@ -39,10 +43,6 @@ ul {
 
   padding-left: 0;
   margin: 0;
-}
-
-ul li {
-  background-color: #18294f;
 }
 
 nav a {
@@ -58,16 +58,55 @@ nav a:hover {
 }
 @media only screen and (min-width: 25em) {
 
+  nav li {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  nav li {
+    width: 25%;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1 {
+    float: left;
+    text-align: left;
+  }
+
+  nav li {
+    width: auto;
+    padding: 1em;
+  }
+
+  nav {
+    float: right;
+
+  }
 }
 
 @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
 }
